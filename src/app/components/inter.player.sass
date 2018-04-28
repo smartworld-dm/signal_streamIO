@@ -1,0 +1,66 @@
+signal-player
+  position: absolute
+  padding: 0
+  margin: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+  top: 0
+  left: 0
+  video
+    /* Make video to at least 100% wide and tall
+    min-width: 100%
+    min-height: 100%
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video
+    width: auto
+    height: auto
+    /*
+    /* Center the video
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    object-fit: cover
+  #sig-video
+    position: fixed
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+
+.status
+  font-weight: 100
+  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace
+  color: #FFF
+  z-index: 1000
+  position: absolute
+  bottom: 40px
+  padding: 1em
+
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+  font-family: sans-serif
+  li
+    padding: 10px
+    cursor: pointer
+    &.selected
+      background-color: #242424
+    &:hover
+      background-color: #FFFFFF
+
+.node
+  background-color: #FFF
+  color: rgba(65,50,63,0.725)
+  min-width: 1em
+  border-radius: 10%
+  vertical-align: middle
+  padding: 1.2rem
+  display: inline-flex
+
+
+.node:hover
+  color: #FFF
+  background-color: #242424
